@@ -1,0 +1,224 @@
+version: '3.9'
+
+services:
+#The below service/container should ALWAYS exist, because if the image
+#doesn't exist in the Host, it will be in charge of building it again
+  mainudplistener:
+    build:
+      context: ./
+    container_name: 'master-20001'
+    ports:
+      - 20001:20001/udp
+    environment:
+      - UDPPORT=20001
+    volumes:
+      - ./UDPLogs/20001:/usr/src/app/logs
+
+#Second device
+  '20002':
+    image: udplistener_mainudplistener
+    container_name: '20002'
+    ports:
+      - 20002:20002/udp
+    environment:
+      - UDPPORT=20002
+    volumes:
+      - ./UDPLogs/20002:/usr/src/app/logs
+
+#Third device
+  '20003':
+    image: udplistener_mainudplistener
+    container_name: '20003'
+    ports:
+      - 20003:20003/udp
+    environment:
+      - UDPPORT=20003
+    volumes:
+      - ./UDPLogs/20003:/usr/src/app/logs
+
+#Fourth device
+  '20004':
+    image: udplistener_mainudplistener
+    container_name: '20004'
+    ports:
+      - 20004:20004/udp
+    environment:
+      - UDPPORT=20004
+    volumes:
+      - ./UDPLogs/20004:/usr/src/app/logs
+
+#Fifth device
+  '20005':
+    image: udplistener_mainudplistener
+    container_name: '20005'
+    ports:
+      - 20005:20005/udp
+    environment:
+      - UDPPORT=20005
+    volumes:
+      - ./UDPLogs/20005:/usr/src/app/logs
+
+#Sixth device
+  '20006':
+    image: udplistener_mainudplistener
+    container_name: '20006'
+    ports:
+      - 20006:20006/udp
+    environment:
+      - UDPPORT=20006
+    volumes:
+      - ./UDPLogs/20006:/usr/src/app/logs
+
+#Seventh device
+  '20007':
+    image: udplistener_mainudplistener
+    container_name: '20007'
+    ports:
+      - 20007:20007/udp
+    environment:
+      - UDPPORT=20007
+    volumes:
+      - ./UDPLogs/20007:/usr/src/app/logs
+
+#Eighth device
+  '20008':
+    image: udplistener_mainudplistener
+    container_name: '20008'
+    ports:
+      - 20008:20008/udp
+    environment:
+      - UDPPORT=20008
+    volumes:
+      - ./UDPLogs/20008:/usr/src/app/logs
+
+#Ninth device
+  '20009':
+    image: udplistener_mainudplistener
+    container_name: '20009'
+    ports:
+      - 20009:20009/udp
+    environment:
+      - UDPPORT=20009
+    volumes:
+      - ./UDPLogs/20009:/usr/src/app/logs
+
+#Tenth device
+  '20010':
+    image: udplistener_mainudplistener
+    container_name: '20010'
+    ports:
+      - 20010:20010/udp
+    environment:
+      - UDPPORT=20010
+    volumes:
+      - ./UDPLogs/20010:/usr/src/app/logs
+
+#Eleventh device
+  '20011':
+    image: udplistener_mainudplistener
+    container_name: '20011'
+    ports:
+      - 20011:20011/udp
+    environment:
+      - UDPPORT=20011
+    volumes:
+      - ./UDPLogs/20011:/usr/src/app/logs
+
+#Twelfth device
+  '20012':
+    image: udplistener_mainudplistener
+    container_name: '20012'
+    ports:
+      - 20012:20012/udp
+    environment:
+      - UDPPORT=20012
+    volumes:
+      - ./UDPLogs/20012:/usr/src/app/logs
+
+#Thirteenth device
+  '20013':
+    image: udplistener_mainudplistener
+    container_name: '20013'
+    ports:
+      - 20013:20013/udp
+    environment:
+      - UDPPORT=20013
+    volumes:
+      - ./UDPLogs/20013:/usr/src/app/logs
+
+#Fourteenth device
+  '20014':
+    image: udplistener_mainudplistener
+    container_name: '20014'
+    ports:
+      - 20014:20014/udp
+    environment:
+      - UDPPORT=20014
+    volumes:
+      - ./UDPLogs/20014:/usr/src/app/logs
+
+#Fifteenth device
+  '20015':
+    image: udplistener_mainudplistener
+    container_name: '20015'
+    ports:
+      - 20015:20015/udp
+    environment:
+      - UDPPORT=20015
+    volumes:
+      - ./UDPLogs/20015:/usr/src/app/logs
+
+#Sixteenth device
+  '20016':
+    image: udplistener_mainudplistener
+    container_name: '20016'
+    ports:
+      - 20016:20016/udp
+    environment:
+      - UDPPORT=20016
+    volumes:
+      - ./UDPLogs/20016:/usr/src/app/logs
+
+#Seventeenth device
+  '20017':
+    image: udplistener_mainudplistener
+    container_name: '20017'
+    ports:
+      - 20017:20017/udp
+    environment:
+      - UDPPORT=20017
+    volumes:
+      - ./UDPLogs/20017:/usr/src/app/logs
+
+#Eighteenth device
+  '20018':
+    image: udplistener_mainudplistener
+    container_name: '20018'
+    ports:
+      - 20018:20018/udp
+    environment:
+      - UDPPORT=20018
+    volumes:
+      - ./UDPLogs/20018:/usr/src/app/logs
+
+#Nineteenth device
+  '20019':
+    image: udplistener_mainudplistener
+    container_name: '20019'
+    ports:
+      - 20019:20019/udp
+    environment:
+      - UDPPORT=20019
+    volumes:
+      - ./UDPLogs/20019:/usr/src/app/logs
+
+#Twentieth device
+  '20020':
+    image: udplistener_mainudplistener
+    container_name: '20020'
+    ports:
+      - 20020:20020/udp
+    environment:
+      - UDPPORT=20020
+    volumes:
+      - ./UDPLogs/20020:/usr/src/app/logs
