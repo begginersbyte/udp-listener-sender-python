@@ -3,6 +3,7 @@ version: '3.9'
 services:
 #The below service/container should ALWAYS exist, because if the image
 #doesn't exist in the Host, it will be in charge of building it again
+#cannot use "docker-compose up -d --scale" because each container needs its own environment variable UDPPORT
   mainudplistener:
     build:
       context: ./
